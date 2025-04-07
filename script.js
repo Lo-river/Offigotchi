@@ -185,7 +185,7 @@ function removeWorker(worker) {
 // Hämtar rätt bild beroende på typ och aktivitet
 function getWorkerImage(type, activity = "start") {
   const number = type.split("-")[1];
-  return `/images/worker-${number}-${activity}.webp`;
+  return `./images/worker-${number}-${activity}.webp`;
 }
 
 // Visar bilden för vald worker och aktivitet
