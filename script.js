@@ -15,8 +15,8 @@ class Worker {
     this.energy = Math.min(100, this.energy + 40);
     this.happiness = Math.max(0, this.happiness - 10);
     this.fullness = Math.max(0, this.fullness - 10);
-    showAction(`${this.name} entered Sleep Mode`);
-    addToHistory(`${this.name} entered Sleep Mode`);
+    showAction(`${this.name} entered sleep mode`);
+    addToHistory(`${this.name} entered sleep mode`);
     showStatusIcon("");
     updateVisual("nap");
     setTimeout(() => updateVisual("start"), 2500);
