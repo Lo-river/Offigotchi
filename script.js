@@ -185,14 +185,14 @@ function removeWorker(worker) {
 // Hämtar rätt bild beroende på typ och aktivitet
 function getWorkerImage(type, activity = "start") {
   const number = type.split("-")[1];
-  return `./images/worker-${number}-${activity}.webp`;
+  return `images/worker-${number}-${activity}.webp`;
 }
 
 // Visar bilden för vald worker och aktivitet
 function updateVisual(activity = "start") {
   const workerVisual = document.getElementById("worker-visual");
   if (!selectedWorker) {
-    workerVisual.innerHTML = `<img src="./images/hatching-suitcase-white.png" class="bounce">`;
+    workerVisual.innerHTML = `<img src="images/hatching-suitcase-white.png" class="bounce">`;
     return;
   }
   const imgPath = getWorkerImage(selectedWorker.type, activity);
