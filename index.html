@@ -6,10 +6,22 @@
   <link rel="icon" type="image/x-icon" href="https://tamagotchi-official.com/favicon.ico">
   <!-- <link rel="icon" type="image/png" href="/images/offigotchi-favicon.png"> -->
 
-  <title>Officegotchi</title>
+  <title>Offigotchi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+        
+      <div class="player-tab">
+        <button id="play-btn">▶ Play</button>
+        <button id="pause-btn">⏸ Pause</button>
+      </div>      
+        <audio id="mp3-audio">
+          <source src="/music/03 - Tulpaner.MP3" type="audio/mpeg"/>
+          Your browser doesn't support office noise.
+        </audio>
+
+
   <div class="body-wrapper">
     <header>
       <img src="images/offigotchi-logo-02.png" class="logo" alt="Officegotchi logo">
@@ -20,6 +32,10 @@
       <div id="selected-worker-name" class="worker-name-display"></div>
     </div>
 
+       
+  
+
+ 
     <div class="wrap-container">
       <aside class="form-container">
         <form id="worker-form">
@@ -80,10 +96,13 @@
     <section class="egg-swtich-container">
       <div class="switcher" id="switcher-container"></div>
     </section>
-
+    
+      
     <div class="fire-box">
       <button id="delete-worker-btn">DISMISS</button>
     </div>
+
+    
   </div>
 
   <script src="script.js"></script>
