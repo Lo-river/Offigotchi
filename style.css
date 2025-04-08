@@ -5,6 +5,7 @@
   src: url(/office-gotchi-v01-boring-color/tamaconnecttype.ttf);
 }
 
+
 body {
   display: flex;
   justify-content: center;
@@ -113,9 +114,9 @@ h3{
   position: absolute;
   top: 1rem;
   left: 1rem;
-  margin-top: 150px;
-  margin-left: 30px;
-  width: 550px;
+  margin-top: 30px;
+  margin-left: 180px;
+  width: 650px;
   z-index: 20px;
 }
 
@@ -531,7 +532,7 @@ h3{
   align-self: start;  
   /* top: calc(145px - 22px);  */
   top: 112px;
-  right: 280px;
+  right: 420px;
   /* background-color: #c0c0c0; */
   background-color: #b1b1af;
   border-top: 2px solid black;
@@ -539,7 +540,6 @@ h3{
   border-radius: 5px 5px 0 0;
   font-family: monospace;
   z-index: 1;
-  display: flex;
   gap: 10px;
   box-shadow: inset -5px -5px #808080, inset 3px 3px #ffffff;
 
