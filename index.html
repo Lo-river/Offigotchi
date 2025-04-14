@@ -2,7 +2,9 @@
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=1024">
+
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <!-- <meta name="viewport" content="width=1280" , initial-scale=1.0" /> -->
   <link rel="icon" type="image/x-icon" href="https://tamagotchi-official.com/favicon.ico">
   <!-- <link rel="icon" type="image/png" href="/images/offigotchi-favicon.png"> -->
@@ -13,14 +15,14 @@
 
 <body>
       <div class="body-container"> 
-      <div class="player-tab">
+      <!-- <div class="player-tab">
         <button id="play-btn">▶ Play</button>
         <button id="pause-btn">⏸ Pause</button>
       </div>      
         <audio id="mp3-audio">
             <source src="music/03-tulpaner.mp3" type="audio/mpeg"/>
           Your browser doesn't support office noise.
-        </audio>
+        </audio> -->
 
 
   <div class="body-wrapper">
@@ -94,13 +96,24 @@
       </section>
     </div>
 
-    <section class="egg-swtich-container">
-      <div class="switcher" id="switcher-container"></div>
-    </section>
-    
-      
-    <div class="fire-box">
-      <button id="delete-worker-btn">DISMISS</button>
+    <div class="tablet-layout-container">
+        <section class="egg-swtich-container">
+        <div class="switcher" id="switcher-container"></div>
+        </section>
+        
+        
+        <div class="fire-box">
+        <button id="delete-worker-btn">DISMISS</button>
+        </div>
+
+        <div class="player-tab">
+            <button id="play-btn">▶ Play</button>
+            <button id="pause-btn">⏸ Pause</button>
+          </div>      
+            <audio id="mp3-audio">
+                <source src="music/03-tulpaner.mp3" type="audio/mpeg"/>
+              Your browser doesn't support office noise.
+            </audio>
     </div>
 
     

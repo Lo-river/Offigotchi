@@ -532,7 +532,7 @@ h3{
   align-self: start;  
   /* top: calc(145px - 22px);  */
   top: 112px;
-  right: 420px;
+  right: 520px;
   /* background-color: #c0c0c0; */
   background-color: #b1b1af;
   border-top: 2px solid black;
@@ -558,4 +558,178 @@ h3{
 .player-tab button:active {
   box-shadow: inset 1px 1px #888, inset -1px -1px #fff;
   transform: translateY(1px);
+}
+
+/* Media ipad/plattor */
+/* 1. MOBIL (iPhone SE / 13 mini / 14 Pro Max) */
+@media screen and (max-width: 480px) {
+  .wrap-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  .form-container,
+  .tamagotchi-shell,
+  .bubble-container,
+  .employee-container {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .body-wrapper {
+    width: 100%;
+    padding: 16px;
+    height: auto;
+    margin-top: 80px;
+  }
+
+  .logo {
+    position: static;
+    width: 80%;
+    max-width: 320px;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  .egg-swtich-container,
+  .fire-box,
+  .player-tab {
+    align-self: center;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .player-tab {
+    position: static;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+/* ========== För iPad landscape (EXAKT 1024px bred) ========== */
+@media screen and (width: 1024px) and (orientation: landscape) {
+
+  /* {
+     border: 5px solid orange;
+  } */
+
+
+  .body-wrapper {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-shrink: 3 !important ;
+    /* width: 85%; */
+    max-width: 960px;
+    margin: 30px 45px 60px 60px;
+    padding: 40px 30px;
+    height: 75%;
+  }
+
+  .wrap-container {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 20px;
+    gap: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow-x: hidden;
+  }
+
+  .employee-container{
+    margin-top: 50px !important;
+  }
+
+  .form-container,
+  .bubble-container,
+  .tamagotchi-shell {
+    width: 100% !important;
+    max-width: 260px;
+    margin-top: 30px;
+  }
+  
+ 
+    .tamagotchi-shell{
+      margin-left: 30px !important;
+      width: 90%;
+      max-width: 200px !important;
+      margin-top: 50px;
+    }
+  
+
+  .logo {
+    display: flex;
+    justify-content: flex-start !important;
+    width: 450px;
+    position: absolute;
+    top: 0.4rem;
+    margin-left: 10px;
+  }
+
+
+
+  
+
+
+
+  .egg-swtich-container{
+    display: flex;
+    flex-direction: row;    
+    justify-content: flex-start !important;
+    align-self: flex-start !important;
+    margin-right: 139px !important;
+    margin-left: 0;
+    /* border: 4px solid salmon !important;   */
+  }
+
+  
+  .fire-box {
+    display: flex;
+    justify-items: center !important;
+    justify-self: center !important;
+    align-items: center !important;
+
+    margin-top: 0;
+    margin-right: 10px !important;
+    /* margin: 1rem auto; */
+  }
+
+
+  /* .player-tab {
+    top: 80px;
+    right: 20px;
+    position: absolute;
+  } */
+
+
+  .player-tab {
+    position: absolute;
+    top: 660px !important;
+    right: 70px !important;
+    background-color: #b1b1af;
+    border-top: 2px solid black;
+    border-radius: 5px 5px 0 0;
+    font-family: monospace;
+    z-index: 1;
+    gap: 10px;
+    box-shadow: inset -5px -5px #808080, inset 3px 3px #ffffff;
+  
+  }
+
+
+
+  .tablet-layout-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start !important;
+    /* align-items: center !important; */
+    width: 100%;
+    gap: 30px;
+    /* border: 4px solid rgb(71, 204, 0) !important;   */
+    margin: 0;
+  }
 }
