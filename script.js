@@ -251,7 +251,7 @@ document.getElementById("btn-eat").addEventListener("click", () => {
 document.getElementById("delete-worker-btn").addEventListener("click", (e) => {
   e.preventDefault();
   if (selectedWorker) {
-    const confirmDelete = confirm(`Are you sure you want to remove ${selectedWorker.name}?`);
+    const confirmDelete = confirm(`Are you sure you want to fire ${selectedWorker.name}?`);
     if (confirmDelete) {
       removeWorker(selectedWorker);
     }
